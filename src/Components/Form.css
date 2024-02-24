@@ -1,0 +1,52 @@
+.main_box {
+    background-color: #f4f4f4;
+    width: 60vh;
+    padding: 5vh;
+    margin: 10vh auto 10vh auto;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 10px;
+ 
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 4vh;
+}
+
+.text_box {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 50vh;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 8px 0 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.submit{
+    width: 28vh;
+    height: 7vh;
+    background-color: rgb(50, 163, 238);
+    color: aliceblue;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.wrong {
+    color: rgb(237, 54, 54);
+    margin-top: 4px;
+    font-size: 16px;
+}
+  
+  
+.successMessage {
+    color: rgb(54, 112, 237);
+    font-size: 40px;
+    margin-top: 10px;
+   
+}
