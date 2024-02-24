@@ -1,7 +1,9 @@
+// Importing necessary dependencies and styles for the Form component, including React hooks for state management and useForm hook from react-hook-form for form handling.
 import React, { useState } from 'react';
 import './Form.css';
 import { useForm } from "react-hook-form";
 
+// Defining a functional component for a form, including state for an alert, useForm hook for form handling, validation function for password confirmation, and submit handler function.
 const Form = () => {
     const [alert, setAlert] = useState(false);
     const { register, handleSubmit, formState: { errors }, watch } = useForm();

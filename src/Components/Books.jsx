@@ -1,9 +1,11 @@
+// Importing necessary dependencies and styles for the Books component, including React hooks for state management, Axios for making HTTP requests, and React Router for navigation.
 import { useEffect, useState } from 'react';
 import './Books.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 const Books = (onSearch) => {
+ // Using useEffect hook to fetch data from a remote API when the component mounts, initializing state variables for books, filtered books, and search term.
     const [books, setBooks] = useState([]);
     const [filteredBooks, setFilteredBooks] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -25,6 +27,8 @@ const Books = (onSearch) => {
         fetchData();
     }, []);
 
+
+// Update the filtered books based on the search term and the current list of books whenever searchTerm or books state changes.
     useEffect(() => {
         const filtered = books.filter((book) =>
             book.title.toLowerCase().includes(searchTerm.toLowerCase())
